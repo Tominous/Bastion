@@ -47,7 +47,7 @@ exports.exec = async (Bastion, message, args) => {
     info = await Bastion.utils.decompressString(userModel.dataValues.info);
   }
   else {
-    info = `No info has been set. ${user.id === message.author.id ? 'Set your info using `setInfo` command.' : ''}`;
+    info = `No info has been set. ${user.id === message.author.id ? 'Set your information using `setInfo` command.' : ''}`;
   }
 
   let rank = parseInt(guildMemberModel.dataValues.rank) + 1;
@@ -164,9 +164,9 @@ async function getUserIcon(user) {
     const supportIcon = 'http://i.imgur.com/HM9UD6w.png';
     const testersIcon = 'https://i.imgur.com/fVIW1Uy.png';
     const translatorsIcon = 'https://i.imgur.com/COwpvnK.png';
-    // const partners = 'https://cdn.discordapp.com/emojis/314068430556758017.png';
-    // const hype = 'https://cdn.discordapp.com/emojis/314068430854684672.png';
-    // const nitro = 'https://cdn.discordapp.com/emojis/314068430611415041.png';
+     const partners = 'https://cdn.discordapp.com/emojis/314068430556758017.png';
+     const hype = 'https://cdn.discordapp.com/emojis/314068430854684672.png';
+     const nitro = 'https://cdn.discordapp.com/emojis/314068430611415041.png';
 
     if (bastionGuildMember.roles.has(devRoleID)) {
       return devIcon;
