@@ -16,10 +16,10 @@ exports.exec = async (Bastion, message, args) => {
   if (channel) {
     let title;
     if (channel.type === 'text') {
-      title = 'Text Channel Info';
+      title = 'Text Channel Information';
     }
     else {
-      title = 'Voice Channel Info';
+      title = 'Voice Channel Information';
     }
     await message.channel.send({
       embed: {
